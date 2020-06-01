@@ -1,25 +1,254 @@
 @media (color) {
   :root {
-    background: seashell;
-    color: #123;
+    background: whitesmoke;
+    color: #333;
   }
 
   ::selection {
-    background: aqua;
+    background: powderblue;
     color: #111;
   }
 
   :link,
   :visited {
-    color: #808;
+    color: slateblue;
   }
 
   :focus {
-    outline-color: #505;
+    outline-color: darkslateblue;
+  }
+
+  .union {
+    background: royalblue;
+    background: slateblue;
+  }
+
+  .stripe:nth-child(odd) {
+    background: #333;
+    color: whitesmoke;
+  }
+
+  .stripe:nth-child(even) {
+    background: whitesmoke;
+    color: #333;
+  }
+
+  .blood {
+    color: crimson;
+  }
+
+  #star {
+    fill: gold;
   }
 }
 
 :root {
   font-family: sans-serif;
-  font-size: calc(1em + 1vmin);
+  font-size: calc(2vmin + 1vmax);
+  line-height: 1.5;
+}
+
+body {
+  margin: auto;
+}
+
+.radio {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+}
+
+.brave {
+  font-style: inherit;
+  font-weight: bold;
+}
+
+.mantra {
+  font-size: 2rem;
+  line-height: 1;
+  font-style: inherit;
+  font-weight: bold;
+  text-shadow: 0 .03em currentColor;
+}
+
+.rip {
+  margin-block-start: 0;
+  margin-block-end: .5rem;
+}
+
+.fam {
+  margin-block-start: .5rem;
+  margin-block-end: 0;
+}
+
+.slate {
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  padding: 0;
+  page-break-after: always;
+}
+
+.alley {
+  display: table;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1rem;
+}
+
+.about {
+  font-family: monospace;
+  font-size: 21px;
+  box-sizing: border-box;
+  margin: 0;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  max-width: 30rem;
+}
+
+.motive {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1rem;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  border-inline-start: 1.5rem solid;
+}
+
+.mural {
+  display: flex;
+  flex-flow: column;
+  min-height: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  transform: rotate(0);
+  transition: 50ms ease;
+  writing-mode: horizontal-tb;
+}
+
+.flag {
+  display: flex;
+  flex-flow: column;
+  min-height: 0;
+  min-width: 0;
+  max-width: 40em;
+}
+
+.grasp {
+  display: flex;
+  flex-flow: row;
+  flex-basis: 100%;
+  min-height: 0;
+  min-width: 0;
+}
+
+.just {
+  flex-basis: 100%;
+}
+
+.juxt {
+  flex-basis: calc(200% / 3);
+}
+
+.people {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 0;
+  min-width: 0;
+}
+
+.stripe {
+  box-sizing: border-box;
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  max-height: none;
+  padding: .5rem;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  overflow: visible;
+  text-shadow: -.03em .05em #888;
+  word-break: break-all;
+}
+
+.union {
+  box-sizing: border-box;
+  padding: .5rem;
+  flex-basis: calc(100% / 3);
+  flex-grow: 0;
+  flex-shrink: 1;
+  order: -1;
+}
+
+.police {
+  display: flex;
+  flex-flow: row;
+}
+
+.police:nth-child(odd) {
+  justify-content: space-between;
+}
+
+.police:nth-child(even) {
+  margin-inline-start: calc(2rem / 3);
+  margin-inline-end: calc(2rem / 3);
+  justify-content: space-around;
+}
+
+@media (orientation: landscape) {
+  .mural {
+    max-width: 36em;
+  }
+  .stripe {
+    max-height: 1.5rem;
+  }
+  .about {
+    width: 70%;
+  }
+}
+
+@media (orientation: portrait) {
+  .mural {
+    max-height: 36em;
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
+  }
+  .stripe {
+    max-width: 1.5em;
+  }
+}
+
+@media (max-aspect-ratio: 3/5) {
+  :root {
+    font-size: calc(5vmin);
+    zoom: calc(2/3);
+  }
+}
+
+@media print {
+  :root {
+    background: none;
+  }
+  .slate {
+    margin-top: 1rem;
+  }
+}
+
+.z\:0 { z-index: 0 }
+.z\:1 { z-index: 1 }
+.z\:2 { z-index: 1 }
+.z\:2 { z-index: 2 }
+.z\:3 { z-index: 3 }
+.z\:4 { z-index: 4 }
+.z\:5 { z-index: 5 }
+.z\:6 { z-index: 6 }
+.z\:7 { z-index: 7 }
+.z\:8 { z-index: 8 }
+
+[hidden] {
+  display: none;
 }
