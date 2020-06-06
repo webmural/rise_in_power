@@ -48,8 +48,19 @@
   line-height: 1.5;
 }
 
+html {
+  min-height: 100%;
+  min-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .radio {
@@ -87,6 +98,8 @@ body {
   margin: auto;
   padding: 0;
   page-break-after: always;
+  min-height: 0;
+  min-width: 0;
 }
 
 .alley {
@@ -94,6 +107,8 @@ body {
   box-sizing: border-box;
   margin: auto;
   padding: 1rem;
+  min-height: 0;
+  min-width: 0;
 }
 
 .about {
